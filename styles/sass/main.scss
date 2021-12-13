@@ -1,0 +1,402 @@
+$lightblue: #a2b9bc;
+$lightolive: #b2ad7f;
+$mediumgrey: #878f99;
+
+$lightpurple: #c5cbe3;
+$darkpurple: #4056a1;
+$brightorange: #f13c20;
+$brightfucia: #e4002b;
+$yellowbeige: #efe2ba;
+$mustard: #d79922;
+$greeblue: #055160;
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.contain {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  background-color: $brightorange;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+
+  .label {
+    flex: 2;
+    font-family: "Noto Serif", serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: $yellowbeige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: -2px;
+
+    span {
+      display: inline-block;
+    }
+
+    span::first-letter {
+      font-size: 4rem;
+      letter-spacing: -2px;
+    }
+
+    span:first-child::first-letter {
+      letter-spacing: -15px;
+    }
+  }
+
+  ul {
+    border-top: 1px solid $yellowbeige;
+    list-style: none;
+    font-size: 1rem;
+    padding-right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+
+    li {
+      display: inline-block;
+      padding-top: 1rem;
+    }
+    a {
+      text-decoration: none;
+      padding: 1.3rem;
+      color: white;
+      transition: font-size 1s;
+    }
+
+    a:hover {
+      color: $darkpurple;
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+
+  .hero-block {
+    position: relative;
+    width: 95%;
+  }
+
+  .hero-image {
+    background-image: url("../../../images/hero2.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+  }
+
+  .hero-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid $brightorange;
+  }
+
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: 100;
+    z-index: 100;
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 100;
+    }
+
+    h3 {
+      font-weight: 100;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+      font-weight: 100;
+    }
+  }
+
+  #btn-register {
+    padding: 1rem;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 3px;
+    color: white;
+    font-size: 1rem;
+  }
+
+  #btn-register:hover {
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.24);
+    border-radius: 3px;
+    color: orange;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+}
+
+.printsamples-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 0 1rem;
+
+  h1 {
+    color: $darkpurple;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  h2 {
+    color: $darkpurple;
+    text-align: center;
+  }
+
+  .works-sample {
+    display: flex;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    flex: 100%;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    h3 {
+      color: $brightorange;
+      text-align: center;
+    }
+  }
+}
+
+.impressionism-section {
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    text-align: center;
+    font-weight: 100;
+    color: $lightolive;
+    font-size: 2rem;
+    padding: 2rem;
+  }
+
+  h2 {
+    text-align: center;
+    color: $lightolive;
+    font-size: 2rem;
+    padding: 2rem;
+  }
+
+  .imp-box {
+    background-color: $mustard;
+    color: $yellowbeige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+    img {
+      display: block;
+      width: 80%;
+    }
+
+    p {
+      padding: 1rem;
+    }
+  }
+}
+
+.artists-section {
+  display: flex;
+
+  .artists-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .a-card {
+    flex: 100%;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+#section-ordertable {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+
+  table {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  h1 {
+    padding: 3rem;
+    color: $mustard;
+    text-align: center;
+  }
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    color: mediumgrey;
+    margin-bottom: 4rem;
+  }
+
+  form {
+    width: 80%;
+  }
+}
+
+.login-form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    color: $mediumgrey;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
+
+  form {
+    margin: 0 2rem;
+  }
+
+  button {
+    align-self: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 781px) {
+  body {
+    font-size: 1.3rem;
+  }
+  nav {
+    flex-direction: row;
+    padding: 1rem;
+
+    .label {
+      justify-content: start;
+      padding-left: 4rem;
+      font-size: 1.5rem;
+    }
+
+    span::first-letter {
+      font-size: 5rem;
+      letter-spacing: -2px;
+    }
+
+    span:first-child::first-letter {
+      letter-spacing: -15px;
+    }
+
+    ul {
+      border-top: 0;
+      font-size: 1.2rem;
+    }
+  }
+
+  .hero-section {
+    .hero-text {
+      top: 30%;
+
+      h1 {
+        font-size: 5rem;
+        font-weight: 100;
+      }
+
+      h3 {
+        font-size: 3rem;
+        font-weight: 100;
+      }
+    }
+
+    #btn-register {
+      padding: 2rem;
+      border: 1px solid white;
+      background-color: transparent;
+      border-radius: 3px;
+      color: white;
+      font-size: 2rem;
+    }
+
+    #btn-register:hover {
+      border: 1px solid white;
+      background-color: rgba(255, 255, 255, 0.24);
+      border-radius: 3px;
+      color: orange;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+  }
+
+  .printsamples-section {
+    .card {
+      flex: 50%;
+    }
+  }
+
+  .impressionism-section {
+    h1 {
+      text-align: center;
+      font-weight: 100;
+      color: $lightolive;
+    }
+
+    .imp-box {
+      background-color: $mustard;
+      color: $yellowbeige;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-top: 3rem;
+      img {
+        padding-left: 2rem;
+        padding-bottom: 2rem;
+        display: block;
+        width: 80%;
+      }
+    }
+  }
+}

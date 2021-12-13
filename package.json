@@ -1,0 +1,17 @@
+{
+  "name": "print-shop-metropolitan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass --watch styles/sass -o styles/css "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@popperjs/core": "^2.11.0",
+    "fontawesome": "^5.6.3",
+    "node-sass": "^7.0.0"
+  }
+}
