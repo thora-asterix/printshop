@@ -5,15 +5,14 @@ const cardsEdgarDegas = document.querySelector("#artworks-edgardegas");
 
 let tableOne = document.querySelector("#tableID");
 
+// a method to check login
 function checkLogin() {
-
   let usenameId = document.querySelector("#username");
   let passwordId = document.querySelector("#password");
   if (usenameId.value == "thora" && passwordId.value == "123") {
     let tempBtn = document.querySelector("#login-btn");
-  
+
     alert("hello");
-    
   }
 }
 
@@ -87,6 +86,7 @@ const artwork = async function (id, cardId) {
   }
 };
 
+// getting json
 const getJson = async function (url) {
   try {
     // const res = await fetch(`${url}`);
